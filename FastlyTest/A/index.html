@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APDI Fastly Edge Test Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🌐 APDI Fastly Edge Feature Tester (Version A)</h1>
+    <p id="location">Detecting edge location...</p>
+  </header>
+
+  <main>
+    <section class="dynamic-data">
+      <h2>Live Timestamp (via JS)</h2>
+      <p id="timestamp">Loading...</p>
+    </section>
+
+    <section class="cdn-test">
+      <h2>Static Asset Caching Test</h2>
+      <img src="test-image.jpg" alt="Cached Test Image" width="300" />
+      <p>This image should be cached by Fastly.</p>
+    </section>
+
+    <section class="json">
+      <h2>JSON Response from API</h2>
+      <button onclick="loadJSON()">Load JSON</button>
+      <pre id="json-output">(No data yet)</pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Edge Test Utility</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
